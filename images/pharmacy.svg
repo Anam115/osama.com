@@ -1,0 +1,18 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="pharmacyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#2563EB"/>
+    </linearGradient>
+    <pattern id="pharmacyGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(56,189,248,0.12)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#pharmacyGrad)"/>
+  <rect width="800" height="500" fill="url(#pharmacyGrid)"/>
+  <circle cx="650" cy="80" r="120" fill="rgba(56,189,248,0.15)"/>
+  <circle cx="100" cy="420" r="90" fill="rgba(37,99,235,0.25)"/>
+  <text x="400" y="220" text-anchor="middle" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-size="34" font-weight="700">Pharmacy Management</text>
+  <text x="400" y="265" text-anchor="middle" fill="#38BDF8" font-family="Segoe UI, Arial, sans-serif" font-size="18">Inventory and Sales System</text>
+</svg>

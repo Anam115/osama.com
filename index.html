@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Osama Anam — Software Engineer & Laravel Full Stack Developer. Portfolio showcasing projects, skills, and experience in PHP, Laravel, and modern web development." />
+  <meta name="keywords" content="Osama Anam, Laravel Developer, Full Stack Developer, PHP Developer, Software Engineer, Portfolio" />
+  <meta name="author" content="Osama Anam" />
+  <meta name="theme-color" content="#0B1220" />
+  <meta property="og:title" content="Osama Anam | Software Engineer Portfolio" />
+  <meta property="og:description" content="Passionate Software Engineer specializing in Laravel, PHP, JavaScript, and REST APIs." />
+  <meta property="og:type" content="website" />
+  <title>Osama Anam | Software Engineer & Laravel Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%230B1220' rx='20' width='100' height='100'/><text x='50' y='68' text-anchor='middle' fill='%2338BDF8' font-size='48' font-family='Arial' font-weight='bold'>OA</text></svg>" />
+  <script>
+    (function () {
+      if (localStorage.getItem("portfolio-theme") === "light") {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#home" class="skip-link">Skip to content</a>
+
+  <!-- Particle Network Background -->
+  <div class="bg-atmosphere" aria-hidden="true">
+    <div class="bg-gradient"></div>
+    <canvas id="particle-canvas"></canvas>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="OA Softwares — Home">
+        <img src="images/logo.png" alt="OA Softwares logo" class="logo-img" width="280" height="72" />
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="status-pill" aria-label="Availability status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Open to Work
+        </span>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-grid"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <p class="hero-greeting">
+            <span class="eyebrow-badge">Software Engineering &amp; Solutions</span>
+          </p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Osama Anam</span>
+          </h1>
+          <p class="hero-role">
+            <span class="role-prefix">I engineer as a</span>
+            <span class="typing" id="typing-text" aria-live="polite"></span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </p>
+          <p class="hero-intro">
+            Passionate Software Engineer specializing in Laravel, PHP, JavaScript, REST APIs,
+            and modern web application development. I build scalable, secure, and user-friendly applications
+            for ambitious products and enterprise workflows.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+              Explore My Work
+            </a>
+            <a href="resume/Osama_Anam_Resume.pdf" class="btn btn-outline" download>
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Contact Me
+            </a>
+          </div>
+          <ul class="trust-row" aria-label="Highlights">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Clean Architecture</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> REST API Expertise</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Laravel Full Stack</li>
+          </ul>
+          <div class="hero-social">
+            <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/osama-anam" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:osamaanam2020@gmail.com" aria-label="Email" class="social-link">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media reveal reveal-delay">
+          <div class="hero-visual">
+            <div class="profile-frame">
+              <div class="profile-ring"></div>
+              <img src="images/profile.png" alt="Professional photo placeholder for Osama Anam" class="profile-img" width="400" height="400" />
+              <div class="profile-badge glass">
+                <i class="fa-solid fa-code" aria-hidden="true"></i>
+                <span>Laravel · Full Stack</span>
+              </div>
+            </div>
+
+            <div class="code-window" aria-hidden="true">
+              <div class="code-window-bar">
+                <span class="code-dot red"></span>
+                <span class="code-dot yellow"></span>
+                <span class="code-dot green"></span>
+                <span class="code-filename">Engineer.php</span>
+              </div>
+              <pre class="code-body"><code><span class="c-comment">// High-performance Laravel stack</span>
+<span class="c-keyword">namespace</span> <span class="c-ns">App\Core</span>;
+
+<span class="c-keyword">class</span> <span class="c-class">SoftwareEngineer</span> {
+  <span class="c-keyword">public function</span> <span class="c-fn">build</span>() {
+    <span class="c-keyword">return</span> [
+      <span class="c-str">'stack'</span>   =&gt; <span class="c-str">'Laravel · PHP · MySQL'</span>,
+      <span class="c-str">'apis'</span>    =&gt; <span class="c-str">'REST · Auth · Secure'</span>,
+      <span class="c-str">'focus'</span>   =&gt; <span class="c-str">'Scalable Web Apps'</span>,
+    ];
+  }
+}</code></pre>
+            </div>
+
+            <div class="floating-chip glass chip-1">
+              <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+              <div>
+                <strong>Performance</strong>
+                <span>Optimized queries</span>
+              </div>
+            </div>
+            <div class="floating-chip glass chip-2">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              <div>
+                <strong>Secure Auth</strong>
+                <span>Roles &amp; policies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Get to know me</p>
+          <h2 class="section-title">Engineering Software That Delivers Impact</h2>
+          <p class="section-subtitle">Clean architecture, maintainable code, and products that solve real problems.</p>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <ul class="about-meta">
+              <li>
+                <span class="meta-label">Name</span>
+                <span class="meta-value">Osama Anam</span>
+              </li>
+              <li>
+                <span class="meta-label">Education</span>
+                <span class="meta-value">Bachelor of Science in Software Engineering</span>
+              </li>
+              <li>
+                <span class="meta-label">Profession</span>
+                <span class="meta-value">Software Engineer</span>
+              </li>
+              <li>
+                <span class="meta-label">Location</span>
+                <span class="meta-value"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Peshawar, Pakistan</span>
+              </li>
+            </ul>
+          </div>
+          <div class="about-desc reveal reveal-delay">
+            <p>
+              Passionate Laravel developer with strong experience in designing, developing, and maintaining
+              modern web applications. Experienced in building Learning Management Systems, E-Commerce Platforms,
+              Management Systems, REST APIs, and responsive user interfaces.
+            </p>
+            <p>
+              I focus on clean architecture, maintainable code, and delivering products that solve real problems
+              for users and organizations.
+            </p>
+            <a href="#projects" class="btn btn-primary">
+              View My Work
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section education" id="education">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Academic background</p>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="timeline education-timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card glass">
+              <div class="timeline-badge">Graduated</div>
+              <h3>Bachelor of Science in Software Engineering</h3>
+              <p class="timeline-meta">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                Undergraduate Degree
+              </p>
+              <p class="timeline-detail">
+                Comprehensive foundation in software design, algorithms, databases, and full-stack web development.
+              </p>
+              <div class="cgpa">
+                <span class="cgpa-label">CGPA</span>
+                <span class="cgpa-value">3.13 <small>/ 4.00</small></span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">What I work with</p>
+          <h2 class="section-title">Skills</h2>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-category glass reveal">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-server" aria-hidden="true"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item" data-progress="95">
+                <div class="skill-info"><span>Laravel</span><span class="skill-pct">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="92">
+                <div class="skill-info"><span>PHP</span><span class="skill-pct">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="90">
+                <div class="skill-info"><span>RESTful APIs</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="88">
+                <div class="skill-info"><span>MVC Architecture</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="90">
+                <div class="skill-info"><span>Authentication</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="88">
+                <div class="skill-info"><span>Authorization</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal reveal-delay">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-palette" aria-hidden="true"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item" data-progress="93">
+                <div class="skill-info"><span>HTML5</span><span class="skill-pct">93%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="90">
+                <div class="skill-info"><span>CSS3</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="88">
+                <div class="skill-info"><span>JavaScript</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="92">
+                <div class="skill-info"><span>Responsive Design</span><span class="skill-pct">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="85">
+                <div class="skill-info"><span>AJAX</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-database" aria-hidden="true"></i>
+              <h3>Database</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item" data-progress="90">
+                <div class="skill-info"><span>MySQL</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="78">
+                <div class="skill-info"><span>MongoDB</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal reveal-delay">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+              <h3>Tools</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item" data-progress="92">
+                <div class="skill-info"><span>Git</span><span class="skill-pct">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="92">
+                <div class="skill-info"><span>GitHub</span><span class="skill-pct">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="95">
+                <div class="skill-info"><span>VS Code</span><span class="skill-pct">95%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="90">
+                <div class="skill-info"><span>Composer</span><span class="skill-pct">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="85">
+                <div class="skill-info"><span>NPM</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+              <div class="skill-item" data-progress="88">
+                <div class="skill-info"><span>Postman</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category glass skill-category-wide reveal">
+            <div class="skill-category-header">
+              <i class="fa-solid fa-lightbulb" aria-hidden="true"></i>
+              <h3>Other</h3>
+            </div>
+            <div class="tag-list">
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Software Development</span>
+              <span class="tag">UI Development</span>
+              <span class="tag">API Integration</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Selected work</p>
+          <h2 class="section-title">Selected Projects &amp; Case Studies</h2>
+          <p class="section-subtitle">Laravel-powered platforms across LMS, e-commerce, management systems, and more.</p>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/kp-digital-lms.svg" alt="KP Digital LMS project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <a href="https://joinit-skillslab.kpitb.online/" class="btn btn-sm btn-outline-light">Live Demo</a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>KP Digital LMS</h3>
+              <p>Government Learning Management System developed using Laravel. Includes Admin Panel, Student Portal, Instructor Portal, Course Partner Management, Screening Tests, Profile Completion, Assignment Management, Quiz Management, Attendance, and Certificate Generation.</p>
+              <div class="tech-badges">
+                <span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span><span>REST APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/donation-platform.svg" alt="Donation Platform project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Donation Platform</h3>
+              <p>A complete donation management system allowing users to donate, manage campaigns, and track donations securely.</p>
+              <div class="tech-badges"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/online-store.svg" alt="Online Store project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Online Store</h3>
+              <p>Modern e-commerce website featuring shopping cart, product management, user authentication, order management, and responsive UI.</p>
+              <div class="tech-badges"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>JavaScript</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/pharmacy.svg" alt="Pharmacy Management System project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Pharmacy Management System</h3>
+              <p>A pharmacy inventory and sales management system with medicine tracking, billing, supplier management, and reports.</p>
+              <div class="tech-badges"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/library.svg" alt="Library Management System project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Library Management System</h3>
+              <p>Digital library management application with book issuing, returns, fines, and member management.</p>
+              <div class="tech-badges"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/student-dashboard.svg" alt="Student Dashboard project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Student Dashboard</h3>
+              <p>Responsive dashboard for students including attendance, assignments, quizzes, and academic information.</p>
+              <div class="tech-badges"><span>Laravel</span><span>JavaScript</span><span>MySQL</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/purchase-requisition.svg" alt="Purchase Requisition System project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Purchase Requisition System</h3>
+              <p>Enterprise requisition workflow system with approvals and document management.</p>
+              <div class="tech-badges"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img src="images/quiz-platform.svg" alt="Quiz Platform project preview" loading="lazy" width="800" height="500" />
+              <div class="project-overlay">
+                <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">GitHub</a>
+                <!-- <a href="#" class="btn btn-sm btn-outline-light">Live Demo</a> -->
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Quiz Platform</h3>
+              <p>Online quiz application supporting MCQs, timers, scoring, and result generation.</p>
+              <div class="tech-badges"><span>Laravel</span><span>PHP</span><span>JavaScript</span><span>MySQL</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Professional journey</p>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="timeline experience-timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card glass">
+              <div class="timeline-badge">Current</div>
+              <h3>Software Engineer</h3>
+              <p class="timeline-meta">
+                <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                Laravel · Full Stack Development
+              </p>
+              <ul class="experience-list">
+                <li>Worked on Laravel-based Government Learning Management System (KP Digital LMS)</li>
+                <li>Designed responsive interfaces</li>
+                <li>Developed REST APIs</li>
+                <li>Integrated authentication systems</li>
+                <li>Database management</li>
+                <li>Performance optimization</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services" id="services">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">How I can help</p>
+          <h2 class="section-title">Core Expertise Built For Growth</h2>
+          <p class="section-subtitle">End-to-end software engineering for modern web products and enterprise workflows.</p>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="services-grid">
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-brands fa-laravel" aria-hidden="true"></i></div>
+            <h3>Laravel Development</h3>
+            <p>Robust, scalable applications built with Laravel best practices and clean architecture.</p>
+            <div class="tech-badges"><span>Laravel</span><span>Eloquent</span><span>Blade</span></div>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-brands fa-php" aria-hidden="true"></i></div>
+            <h3>PHP Development</h3>
+            <p>Custom PHP solutions for business logic, integrations, and maintainable backends.</p>
+            <div class="tech-badges"><span>PHP</span><span>MVC</span><span>Composer</span></div>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-solid fa-plug" aria-hidden="true"></i></div>
+            <h3>REST API Development</h3>
+            <p>Secure, well-documented RESTful APIs designed for web and mobile clients.</p>
+            <div class="tech-badges"><span>REST</span><span>JSON</span><span>Auth</span></div>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+            <h3>Responsive Web Design</h3>
+            <p>Pixel-perfect, accessible interfaces that work beautifully across all devices.</p>
+            <div class="tech-badges"><span>HTML5</span><span>CSS3</span><span>JS</span></div>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+            <h3>Database Design</h3>
+            <p>Efficient schema design, queries, and data modeling for MySQL and MongoDB.</p>
+            <div class="tech-badges"><span>MySQL</span><span>MongoDB</span><span>Indexing</span></div>
+          </article>
+          <article class="service-card glass reveal">
+            <div class="service-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3>Full Stack Development</h3>
+            <p>End-to-end delivery from UI to API to database with production-ready quality.</p>
+            <div class="tech-badges"><span>Laravel</span><span>MySQL</span><span>AJAX</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section stats" id="stats" aria-label="Statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card glass reveal">
+            <div class="stat-icon"><i class="fa-solid fa-folder-open" aria-hidden="true"></i></div>
+            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card glass reveal">
+            <div class="stat-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <div class="stat-number" data-target="15" data-suffix="+">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card glass reveal">
+            <div class="stat-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></div>
+            <div class="stat-number" data-target="100" data-suffix="K+">0</div>
+            <div class="stat-label">Lines of Code</div>
+          </div>
+          <div class="stat-card glass reveal">
+            <div class="stat-icon"><i class="fa-solid fa-users" aria-hidden="true"></i></div>
+            <div class="stat-number" data-target="10" data-suffix="+">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section class="section certificates" id="certificates">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Credentials &amp; learning</p>
+          <h2 class="section-title">Professional Certificates</h2>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="certificates-grid">
+           <!-- IT Specialist HTML5 -->
+           <article class="cert-card glass reveal">
+            <div class="cert-preview">
+              <img src="images/certificates/html5-it-specialist.png" alt="IT Specialist certificate — HTML5 Application Development" loading="lazy" width="800" height="560" />
+              <button type="button" class="cert-view-btn" data-cert-src="images/certificates/html5-it-specialist.png" data-cert-title="HTML5 Application Development" aria-label="View HTML5 certificate">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                View
+              </button>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-issuer"><i class="fa-solid fa-certificate" aria-hidden="true"></i> Certiport · Pearson VUE</span>
+                <span class="cert-date">Jul 2025</span>
+              </div>
+              <h3>HTML5 Application Development</h3>
+              <div class="cert-tags">
+                <span>HTML5</span>
+                <span>IT Specialist</span>
+                <span>Certiport</span>
+              </div>
+              <a href="https://verify.certiport.com/" target="_blank" rel="noopener noreferrer" class="cert-verify" title="Credential code: wM2XC-Fa8v">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                Verify · wM2XC-Fa8v
+              </a>
+            </div>
+          </article>
+          <!-- NAVTTC -->
+          <article class="cert-card glass reveal">
+            <div class="cert-preview">
+              <img src="images/certificates/navttc-web-dev.png" alt="NAVTTC certificate — Advance Web Application Development" loading="lazy" width="800" height="560" />
+              <button type="button" class="cert-view-btn" data-cert-src="images/certificates/navttc-web-dev.png" data-cert-title="Advance Web Application Development" aria-label="View NAVTTC certificate">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                View
+              </button>
+              <!-- <span class="cert-grade">A+</span> -->
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-issuer"><i class="fa-solid fa-landmark" aria-hidden="true"></i> NAVTTC · Govt. of Pakistan</span>
+                <span class="cert-date">Jul 2025</span>
+              </div>
+              <h3>Advance Web Application Development</h3>
+              <div class="cert-tags">
+                <span>Web Development</span>
+                <span>NAVTTC</span>
+                <span>Reg. K-25-939199</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Laravel / Board Infinity -->
+          <article class="cert-card glass reveal">
+            <div class="cert-preview">
+              <img src="images/certificates/laravel-php-board-infinity.png" alt="Coursera certificate — Mastering Laravel Framework and PHP" loading="lazy" width="800" height="560" />
+              <button type="button" class="cert-view-btn" data-cert-src="images/certificates/laravel-php-board-infinity.png" data-cert-title="Mastering Laravel Framework and PHP" aria-label="View Laravel certificate">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                View
+              </button>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-issuer"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> Board Infinity · Coursera</span>
+                <span class="cert-date">May 2025</span>
+              </div>
+              <h3>Mastering Laravel Framework and PHP</h3>
+              <div class="cert-tags">
+                <span>Laravel</span>
+                <span>PHP</span>
+                <span>Backend</span>
+              </div>
+              <a href="https://coursera.org/verify/7QXRTB6CL3WF" target="_blank" rel="noopener noreferrer" class="cert-verify">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                Verify Credential
+              </a>
+            </div>
+          </article>
+
+         
+
+          <!-- Microsoft Full-Stack -->
+          <article class="cert-card glass reveal">
+            <div class="cert-preview">
+              <img src="images/certificates/fullstack-microsoft.png" alt="Microsoft Coursera certificate — Foundations of Coding Full-Stack" loading="lazy" width="800" height="560" />
+              <button type="button" class="cert-view-btn" data-cert-src="images/certificates/fullstack-microsoft.png" data-cert-title="Foundations of Coding Full-Stack" aria-label="View Full-Stack certificate">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                View
+              </button>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-issuer"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft · Coursera</span>
+                <span class="cert-date">Jan 2025</span>
+              </div>
+              <h3>Foundations of Coding Full-Stack</h3>
+              <div class="cert-tags">
+                <span>Full-Stack</span>
+                <span>Microsoft</span>
+                <span>Coding</span>
+              </div>
+              <a href="https://coursera.org/verify/Q8SIKGG962A3" target="_blank" rel="noopener noreferrer" class="cert-verify">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                Verify Credential
+              </a>
+            </div>
+          </article>
+
+          <!-- Microsoft Front-End -->
+          <article class="cert-card glass reveal">
+            <div class="cert-preview">
+              <img src="images/certificates/frontend-microsoft.png" alt="Microsoft Coursera certificate — Foundations of Coding Front-End" loading="lazy" width="800" height="560" />
+              <button type="button" class="cert-view-btn" data-cert-src="images/certificates/frontend-microsoft.png" data-cert-title="Foundations of Coding Front-End" aria-label="View Front-End certificate">
+                <i class="fa-solid fa-expand" aria-hidden="true"></i>
+                View
+              </button>
+            </div>
+            <div class="cert-body">
+              <div class="cert-meta-row">
+                <span class="cert-issuer"><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft · Coursera</span>
+                <span class="cert-date">Jan 2025</span>
+              </div>
+              <h3>Foundations of Coding Front-End</h3>
+              <div class="cert-tags">
+                <span>Front-End</span>
+                <span>Microsoft</span>
+                <span>UI</span>
+              </div>
+              <a href="https://coursera.org/verify/4NPXR6FMT2U7" target="_blank" rel="noopener noreferrer" class="cert-verify">
+                <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                Verify Credential
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificate lightbox -->
+    <div class="cert-modal" id="cert-modal" hidden>
+      <div class="cert-modal-backdrop" data-cert-close></div>
+      <div class="cert-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+        <button type="button" class="cert-modal-close" data-cert-close aria-label="Close certificate viewer">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+        <h3 id="cert-modal-title" class="cert-modal-title">Certificate</h3>
+        <img src="" alt="" id="cert-modal-img" class="cert-modal-img" />
+      </div>
+    </div>
+
+    <!-- GitHub -->
+    <section class="section github-section" id="github">
+      <div class="container">
+        <div class="github-card glass reveal">
+          <div class="github-card-content">
+            <div class="github-avatar" aria-hidden="true">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div>
+              <p class="section-eyebrow">Open source &amp; code</p>
+              <h2 class="section-title">GitHub</h2>
+              <p class="github-username">
+                <i class="fa-solid fa-at" aria-hidden="true"></i>
+                anam115
+              </p>
+              <p class="github-desc">Explore my repositories, contributions, and ongoing development work.</p>
+              <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                Visit GitHub
+                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Let's connect</p>
+          <h2 class="section-title">Let's Build Something Exceptional Together</h2>
+          <p class="section-subtitle">Have a project in mind or need a Laravel engineer? Reach out directly.</p>
+          <div class="section-line"></div>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a href="mailto:osamaanam2020@gmail.com" class="contact-item glass">
+              <div class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+              <div>
+                <h3>Email</h3>
+                <p>osamaanam2020@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+923424865949" class="contact-item glass">
+              <div class="contact-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></div>
+              <div>
+                <h3>Phone</h3>
+                <p>+92 342 4865949</p>
+              </div>
+            </a>
+            <div class="contact-item glass">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></div>
+              <div>
+                <h3>Location</h3>
+                <p>Peshawar, Pakistan</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal reveal-delay" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="How can I help?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <img src="images/logo.png" alt="OA Softwares logo" class="logo-img" width="280" height="72" />
+        </a>
+        <p>Software Engineer specializing in Laravel and full-stack web development.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Connect</h3>
+        <div class="hero-social">
+          <a href="https://github.com/anam115" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/osama-anam" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="mailto:osamaanam2020@gmail.com" aria-label="Email" class="social-link">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Osama Anam. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/particles.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
